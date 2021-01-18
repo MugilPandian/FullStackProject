@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/loginstyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sub1">
+            <img id="img1" src="https://images.unsplash.com/photo-1558530755-e4785fddbe89?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHdlYnBhZ2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" width=400px >
+        </div>
+        <div class="sub2">
+            <center><h1>STUDENT LOGIN</h1></center>
+            <form id="form" action="/validate">
+                <div><input class="in" type="email" id="email" name="email" placeholder="Email"></div><br>
+                <div><input class="in" type="password" id="password" name="pwd" placeholder="Password"></div><br>
+                <div style="font-weight:bold">Not a user ? <a href="../views/Signup.html">Signup</a></div><br>
+                <input type="submit" id="smt" value="SUBMIT" onclick="isValid()">
+                <button id="cl" onclick="clear()">CLEAR</button>
+
+            </form>
+        </div>
+    </div>
+    <script src="../public/js/loginscript.js">
+    </script>
+</body>
+</html>
