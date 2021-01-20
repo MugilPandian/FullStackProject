@@ -1,5 +1,19 @@
 body{
-    background:url("../images/andrew-ridley-jR4Zf-riEjI-unsplash.jpg") no-repeat center center fixed;
+    background:url("https://images.unsplash.com/photo-1559999831-7deaf136d4a9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8bWluaW1hbCUyMDRrfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60") no-repeat center center fixed;
     background-size:cover;
+    position: relative;
+}
+.con1{
+    position: relative;
+    top:50%;
+    transform: translate(0,50%);
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    background: linear-gradient(to bottom right,rgba(211, 193, 193,0.3),rgba(199, 46, 46, 0.3));
+    border-radius: 10px;
+}
+
+.con2{
 
 }
