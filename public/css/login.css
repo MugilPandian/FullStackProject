@@ -43,3 +43,61 @@ label{
     text-decoration: none;
     font-weight: bold;
 }
+
+/* placeholdercolor */
+Code:
+.form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.form-control:-moz-placeholder {
+  color: ;
+}
+.form-control::-moz-placeholder {
+  color: #ffffff;
+}
+.form-control::placeholder {
+  color: #ffffff;
+}
+.form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+#Email,#Password{
+    background-color: transparent;
+}
+
+/*input tag glow*/
+input[type=text], textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    
+  }
+   
+  input[type=password]:focus, textarea:focus {
+    box-shadow: 0 0 5px rgb(238, 81, 81);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgb(238, 81, 81);
+  }
+  input[type=password], textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    
+  }
+   
+  input[type=text]:focus, textarea:focus {
+    box-shadow: 0 0 5px rgb(238, 81, 81);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgb(238, 81, 81);
+  }
