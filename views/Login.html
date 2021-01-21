@@ -13,25 +13,26 @@
         <img src="https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" width="100%" height="100%">
       </div>
         <div class="col-sm-6 p-3 con2">
-            <form>
+            <form id="form">
                 <div class="form-group">
                   <label for="exampleInputEmail1">EMAIL ADDRESS</label>
                   <input type="text" class="form-control" id="Email" aria-describedby="emailHelp" placeholder=" Email">
-                  <small id="emailHelp" class="form-text text-muted"></small>
-                </div><br>
+                  <p id="emailHelp"></p>
+                </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">PASSWORD</label>
                   <input type="password" class="form-control" id="Password" placeholder=" Password">
-                  <small id="pwdHelp" class="form-text text-muted"></small>
-                </div><br>
+                  <p id="pwdHelp"></small>
+                </div>
                 <div class="link">
                   <label class="form-check-label" for="exampleCheck1">Not a user? <a href="Signup.html" class="link">Signup</a></label>
                 </div><br>
-                <button type="submit" class="btn btn-success">Submit</button>
+                <input type="button" class="btn btn-success" onclick="isValid()" value="Submit">
                 <button type="reset" class="btn btn-secondary">Reset</button>
               </form>
 
         </div>
     </div>
+    <script src="../public/js/loginscript.js"></script>
 </body>
 </html>
