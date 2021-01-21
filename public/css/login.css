@@ -37,11 +37,15 @@ label{
     font-weight: 400;
     color:rgb(255, 255, 255);
 }
-
+/*link*/
 .link{
     color:rgb(159, 240, 226);
     text-decoration: none;
     font-weight: bold;
+}
+
+.link:hover{
+    color:red;
 }
 
 /* placeholdercolor */
@@ -75,14 +79,15 @@ input[type=text], textarea {
     outline: none;
     padding: 3px 0px 3px 3px;
     margin: 5px 1px 3px 0px;
-    
+    color: #ffffff;
   }
    
-  input[type=password]:focus, textarea:focus {
+  input[type=text]:focus, textarea:focus {
     box-shadow: 0 0 5px rgb(238, 81, 81);
     padding: 3px 0px 3px 3px;
     margin: 5px 1px 3px 0px;
     border: 1px solid rgb(238, 81, 81);
+    color: #ffffff;
   }
   input[type=password], textarea {
     -webkit-transition: all 0.30s ease-in-out;
@@ -92,12 +97,14 @@ input[type=text], textarea {
     outline: none;
     padding: 3px 0px 3px 3px;
     margin: 5px 1px 3px 0px;
-    
+    color: #ffffff;
   }
    
-  input[type=text]:focus, textarea:focus {
+  input[type=password]:focus, textarea:focus {
     box-shadow: 0 0 5px rgb(238, 81, 81);
     padding: 3px 0px 3px 3px;
     margin: 5px 1px 3px 0px;
     border: 1px solid rgb(238, 81, 81);
+    color: #ffffff;
   }
+  
