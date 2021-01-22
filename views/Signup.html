@@ -14,7 +14,7 @@
         </div>
         <div class="col-sm-6 p-3 sub2">
             <h1>STUDENT SIGNUP</h1>
-            <form id="formSignup" action="/signupValidate" method="POST" onsubmit="Validate()">
+            <form id="formSignup" action="/signupValidate" method="POST">
                 <div class="form-group">
                     <label for="Name">Name:</label>
                     <input type="text" class="form-control" id="Name">
@@ -33,21 +33,22 @@
                 <div class="form-group">
                     <label for="Pwd">Password:</label>
                     <input type="password" class="form-control" id="Pwd">
-                    <p id="Pwd"></p>
+                    <p id="PwdErr"></p>
                 </div>
                 <div class="form-group">
                     <label for="CPwd">Confirm Password:</label>
                     <input type="password" class="form-control" id="CPwd">
-                    <p id="CPwd"></p>
+                    <p id="CPwdErr"></p>
                 </div>
                 <div class="form-group">
                     <label for="Gender">Gender:</label><br>
-                    <input type="radio" class="radio-inline"> Male 
-                    <input type="radio" class="radio-inline"> Female 
-                    <input type="radio" class="radio-inline"> Other 
-                </div><br>
+                    <input type="radio" class="radio-inline gen" name="gen" value="Male"> Male 
+                    <input type="radio" class="radio-inline gen" value="Female" name="gen"> Female 
+                    <input type="radio" class="radio-inline gen" value="Other" name="gen"> Other 
+                    <p id="GenErr"></p>
+                </div>
                 <div class="form-group">
-                    <input type="Submit" class="btn btn-success" value="Submit">
+                    <input type="button" class="btn btn-success" value="Submit" onclick="Validate()">
                     <input type="reset" class="btn btn-secondary" value="Clear">
                 </div>
             </form>
