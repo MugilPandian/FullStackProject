@@ -27,10 +27,3 @@ function Validate(){
         alert("Passwords do not match!")
     }
 }
-function clear(){
-    document.forms["sform"]["name"].value=" ";
-    document.forms["sform"]["rno"].value=" ";
-    document.forms["sform"]["email"].value=" ";
-    document.forms["sform"]["pwd"].value=" ";
-    document.forms["sform"]["gender"].value=" ";
-}
