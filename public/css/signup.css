@@ -12,11 +12,13 @@ body{
 
 .main{
     display: flex;
+    height:750px;   
     width: 800px;
     background: linear-gradient(to bottom right,rgba(255, 255, 255, 0.308),rgba(255, 254, 254, 0.3));
 }
 
 .sub1{
+    
     background: linear-gradient(to bottom right,rgba(255, 255, 255, 0.308),rgba(255, 254, 254, 0.3));
 }
 
