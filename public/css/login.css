@@ -2,7 +2,8 @@ body{
     background:url("../images/pexels-travis-blessing-1363876.jpg") no-repeat center center fixed;
     /* background: linear-gradient(to bottom right, #d4d4d4 0%, #cb2525 100%); */
     background-size:cover;
-    position: relative;
+    display: grid;
+    place-items:center;
 }
 
 .con1{
@@ -50,7 +51,6 @@ label{
 }
 
 /* placeholdercolor */
-Code:
 .form-control::-webkit-input-placeholder {
   color: #ffffff;
 }
