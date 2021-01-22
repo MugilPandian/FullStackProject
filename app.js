@@ -44,7 +44,7 @@ connection.query('insert into student_details values(?,?,?,?)',[Uname,email,roll
     if(err) throw err;
     if(results){
         console.log("Values Inserted");
-        res.sendFile(__dirname +'/views/proj_login.html');
+        res.sendFile(__dirname +'/views/Login.html');
     }
 })
 
