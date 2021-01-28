@@ -2,7 +2,7 @@ var express= require('express');
 var app=express();
 var bodyParser =require('body-parser');
 
-var connection=require('./Controller/route'); 
+var connection=require('./Controller/Routes/route'); 
 
 app.set('views','./views');
 app.set('view engine','ejs');
