@@ -25,7 +25,7 @@ router.post('/validate',function(req,res){
         if (err) throw err;
         if(results){
             connection.query('select password from student_details where email like ? and password like ?)',[email,pwd],(err,results)=>{
-                res.send('<h3>Hello everyone</h3>');
+                res.render('user-list',);
             })
         }
     })
