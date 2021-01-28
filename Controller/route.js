@@ -3,8 +3,7 @@ const app = express();
 const router = express.Router();
 const connection = require('../model/database');
 
-app.set('views','./views');
-app.set('view engine','ejs');
+
 
 connection.connect((err) => {
     if(err) throw err;
