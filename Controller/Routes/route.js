@@ -25,7 +25,12 @@ router.post('/validate',function(req,res){
         if (err) throw err;
         if(results){
             connection.query('select password from student_details where email like ? and password like ?)',[email,pwd],(err,results)=>{
-                res.render('user-list',);
+                connection.query('select student_marksheet.*,student_details.email from student_marksheet.rollno=student_details.email=(?)',[email],(err,results)=>{
+                    console.log(results);
+                    res.render('user-list',{userData:results});
+                    
+                })
+                
             })
         }
     })
