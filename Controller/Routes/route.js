@@ -7,7 +7,6 @@ const connection = require('../../model/database.js');
 
 connection.connect((err) => {
     if(err) throw err;
-
     console.log('Connection successful');
 })
 
