@@ -24,8 +24,8 @@ router.post('/validate',function(req,res){
     connection.query('select email from student_details where email like ?',[email],(err,results)=>{
         if (err) throw err;
         if(results){
-            connection.query('select password from student_details where email like ? and password like ?)',[email,pwd],(err,results1)=>{
-                connection.query('select student_marksheet.*,student_details.email from student_marksheet join student_details on student_marksheet.rollno= student_details.rollno where email like ?',[email],(err,results)=>{
+            connection.query('select pwd from student_details where email like ? and pwd like ?)',[email,pwd],(err,results1)=>{
+                connection.query('select student_marksheet.*,student_details.email from student_marksheet join student_details on student_marksheet.rollno= student_details.rollno where email like ? and pwd like ?',[email,pwd],(err,results)=>{
                     console.log(results);
                     res.render('user-list',{userData:results});
 
