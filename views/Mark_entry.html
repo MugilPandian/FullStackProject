@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-sm p-3 conMain">
+        <div class="col con1">
+            <form id="form" action="/Admin_markentry" method="POST">
+                <div class="form-group">
+                    <label for="Name">Name:</label>
+                    <input type="text" class="form-control" id="Name">
+                    <p id="NameErr"></p>
+                </div>
+                <div class="form-group">
+                    <label for="RollNo">Roll Number:</label>
+                    <input type="text" class="form-control" id="rollno">
+                    <p id="RollErr"></p>
+                </div>
+                <div class="form-group">
+                    <label for="Exam date">Exam Date:</label>
+                    <input type="date" class="form-control" id="Edate">
+                    <p id="DateErr"></p>
+                </div>
+                <div class="form-group">
+                    <label for="Test1">Test 1 Marks:</label>
+                    <input type="text" class="form-control" id="Test1">
+                    <p id="t1Err"></p>
+                </div>
+                <div class="form-group">
+                    <label for="Test2">Test 2 Marks:</label>
+                    <input type="text" class="form-control" id="Test2">
+                    <p id="t2Err"></p>
+                </div>
+                <div class="form-group">
+                    <label for="Test3">Test 3 Marks:</label>
+                    <input type="text" class="form-control" id="Test3">
+                    <p id="t3Err"></p>
+                </div>
+                <input type="button" class="btn btn-success" onclick="" value="Submit">
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
