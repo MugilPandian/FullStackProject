@@ -1,0 +1,18 @@
+body{
+    background:url("../images/pexels-rovenimagescom-949587.jpg") no-repeat center center fixed;
+    /* background: linear-gradient(to bottom right, #d4d4d4 0%, #cb2525 100%); */
+    background-size:cover;
+    display: grid;
+    place-items:center;
+}
+.table1{
+    position: relative;
+    transform: translate(0,50%);
+    width: 800px;
+      margin-right: auto;
+      margin-left: auto;
+    background: linear-gradient(to bottom right,rgba(211, 193, 193,0.3),rgba(211, 193, 193, 0.3));
+    border-radius: 10px;
+    display: flex;
+}
+

@@ -4,46 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/user-list.css">
 </head>
 <body>
-    <div class="table data" id="flex-container">
+    <div class="table1" id="flex-container">
         <div class "c1">
-            <h2>Mark sheet</h2>
+            <h1>Mark sheet</h1>
         </div>
-        <div class "c1">
-            <table border="1">
-                <tr>
-                    <th>S.no</th>
-                    <th>Name</th>
-                    <th>Roll No</th>
-                    <th>Date</th>
-                    <th>Test 1</th>
-                    <th>Test 2</th>
-                    <th>Test 3</th>
-                    <th>Average Score</th>
+        <div class "c2">
+            <table class="table table-striped table-responsive-sm table-bordered tb1">
+                <tr class="bg-danger">
+                    <th scope="col">S.no</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Roll No</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Test 1</th>
+                    <th scope="col">Test 2</th>
+                    <th scope="col">Test 3</th>
+                    <th scope="col">Average Score</th>
                 </tr>
                 <% if(userData.length !=0){ %>
-            <% userData.forEach((results) => { %>
+                <% userData.forEach((results) => { %>
                 <% var i=1; %>
-            <tr>
-                <td><%= i; %></td>
-                <td><%= results.Username %></td>
-                <td><%= results.rollno %></td>
-                <% var datemonth=results.exam_date.getMonth()+1 %>
-                <td><%= results.exam_date.getDate()+"/"+datemonth+"/"+results.exam_date.getFullYear() %></td>
-                <!-- <td><%= results.Email %></td> -->
-                <td><%= results.t1 %></td>
-                <td><%= results.t2 %></td>
-                <td><%= results.t3 %></td>
-                <td><%= Math.round((results.t1 + results.t2 + results.t3)/3) %></td>
-            </tr>
+                <tr class="table-danger">
+                    <td><%= i; %></td>
+                    <td><%= results.Username %></td>
+                    <td><%= results.rollno %></td>
+                    <% var datemonth=results.exam_date.getMonth()+1 %>
+                    <td><%= results.exam_date.getDate()+"/"+datemonth+"/"+results.exam_date.getFullYear() %></td>
+                    <!-- <td><%= results.Email %></td> -->
+                    <td><%= results.t1 %></td>
+                    <td><%= results.t2 %></td>
+                    <td><%= results.t3 %></td>
+                    <td><%= Math.round((results.t1 + results.t2 + results.t3)/3) %></td>
+                </tr>
                 <% i++; %>
-        <% }); %>
-        <% } else{ %>
-        <tr>
-            <td colspan="9">No data found</td>
-        </tr>
-        <% } %>        
+                <% }); %>
+                <% } else{ %>
+                <tr class="table-danger">
+                <td colspan="9">No data found</td>
+                </tr>
+                <% } %>        
             </table>
         </div>
     </div>
