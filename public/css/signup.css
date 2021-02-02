@@ -29,3 +29,12 @@ p{
     font-weight: bold;
     color: red;
 }
+.link{
+    color:rgb(159, 240, 226);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover{
+    color:red;
+}
