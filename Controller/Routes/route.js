@@ -1,7 +1,17 @@
 const express = require('express');
 const app = express();
 const router = express.Router();
-const connection = require('../../model/database.js');
+const {mongourl} = require('../../model/database');
+const {Admin_details} = require('../../model/Admin_details');
+const {Mark_sheet} = require('../../model/Mark_sheet');
+const {Student_details} = require('../../model/Student_details');
+const {mongoose}=require('mongoose');
+
+mongoose.connect(mongourl,{useNewUrlParse:true});
+
+mongoose.connection.on('connected',()=>{
+    console.log("Mongoose is connected");
+})
 
 
 
