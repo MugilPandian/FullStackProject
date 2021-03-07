@@ -8,4 +8,4 @@ Express JS acts as a sort of middleware
 
 Integrated with MySQL and ejs
 
-Yet to integrate with mongoDB
+Yet to integrate with mongoDB.
